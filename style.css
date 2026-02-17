@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(233, 233, 233);
+}
+.nav-container {
+  margin: 20px;
+}
+.nav-menu {
+  background: linear-gradient(
+    180deg,
+    rgba(54, 54, 54, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav-menu > li {
+  padding: 10px 20px;
+  border-right: 1px rgb(158, 158, 158) solid;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+.nav-menu > li:hover {
+  background-color: rgb(0, 169, 236);
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  top: 103%;
+  left: 0%;
+  background-color: rgb(0, 169, 236);
+  width: 100%;
+  transition: ease 0.3s;
+}
+.sub-menu > li {
+  padding: 10px 20px;
+  border-right: 1px rgb(158, 158, 158) solid;
+  cursor: pointer;
+}
+.sub-menu > li:hover {
+  background-color: rgb(31, 178, 236);
+}
+
+.dropdown:hover > .sub-menu {
+  display: flex;
+}
